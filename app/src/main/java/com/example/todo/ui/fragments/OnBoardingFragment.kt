@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.fragment.findNavController
 import com.example.todo.R
 import com.example.todo.databinding.FragmentOnBoardingBinding
@@ -36,7 +37,8 @@ class OnBoardingFragment : Fragment(), OnItemClicker {
     }
 
     override fun onClick() {
-        findNavController().navigate(R.id.action_onBoardingFragment_to_homeFragment)
+        findNavController().navigate(R.id.clearBackStack)
+
     }
 
     override fun onClickNext() {

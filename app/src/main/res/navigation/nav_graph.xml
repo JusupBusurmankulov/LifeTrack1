@@ -23,7 +23,10 @@
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding">
         <action
-            android:id="@+id/action_onBoardingFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/clearBackStack"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
