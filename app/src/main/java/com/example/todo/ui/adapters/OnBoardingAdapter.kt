@@ -41,7 +41,9 @@ class OnBoardingAdapter(private val list: ArrayList<OnBoardingModel>, val listen
                 }
             }
             else
-                listener.onClickNext()
+                binding.btnNext.setOnClickListener {
+                    listener.onClickNext()
+                }
         }
     }
 }
